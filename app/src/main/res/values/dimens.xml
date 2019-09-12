@@ -4,6 +4,7 @@
     <dimen name="list_size">300dp</dimen>
     <dimen name="list_peek">100dp</dimen>
     <dimen name="list_peek_0">0dp</dimen>
+    <dimen name="list_peek_150">150dp</dimen>
     <dimen name="list_radius">600dp</dimen>
     <dimen name="list_radius_56">56dp</dimen>
 </resources>

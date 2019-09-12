@@ -154,7 +154,8 @@ public class TurnLayoutManager extends LinearLayoutManager {
     }
 
     public void setPeekDistance(int peekDistance) {
-        this.peekDistance = Math.min(Math.max(peekDistance, MIN_PEEK), radius);
+//        this.peekDistance = Math.min(Math.max(peekDistance, MIN_PEEK), radius);
+        this.peekDistance = peekDistance;
         requestLayout();
     }
 

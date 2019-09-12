@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         views = new Views(this);
         adapter = new SampleAdapter(this);
         final int radius = (int) getResources().getDimension(R.dimen.list_radius);
-        final int peek = (int) getResources().getDimension(R.dimen.list_peek_0);
+        final int peek = -(int) getResources().getDimension(R.dimen.list_peek_150);
         layoutManager = new TurnLayoutManager(this,
                 TurnLayoutManager.Gravity.END,
                 TurnLayoutManager.Orientation.HORIZONTAL,
@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             views.peekText.setText(getResources().getString(R.string.peek_format, progress));
             if (fromUser) {
-                layoutManager.setPeekDistance(progress);
+                layoutManager.setPeekDistance(-progress);
             }
         }
 
